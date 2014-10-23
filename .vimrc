@@ -6,3 +6,8 @@
 
 "highlight trailing whitespace as error"
 :match Error /\s\+$/
+
+"stop vim creating backup files"
+set nobackup
+set nowritebackup
+
