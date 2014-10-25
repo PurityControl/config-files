@@ -14,3 +14,8 @@ set nowritebackup
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
+
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
