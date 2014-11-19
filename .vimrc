@@ -5,7 +5,8 @@
 set smartindent"
 
 "highlight trailing whitespace as error"
-:match Error /\s\+$/
+highlight ExtraWhitespace ctermbg=1 guibg=red
+:match ExtraWhitespace /\s\+$/
 
 "stop vim creating backup files"
 set nobackup
