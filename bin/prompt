@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 1 ]; then
+  case $1 in
+  git)
+    echo "setting up git prompt"
+    which git-prompt
+    #if git-prompt script is availabe launch
+    ;;
+  default)
+    echo "setting up default prompt"
+    ;;
+  esac
+else
+  echo "you must supply an arument to prompt\n"
+  echo "usage prompt (git | default) \n"
+fi
