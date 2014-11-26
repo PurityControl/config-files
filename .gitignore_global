@@ -1,0 +1,4 @@
+# remove all editor backup and swap files
+*.swp
+*~
+.#*
