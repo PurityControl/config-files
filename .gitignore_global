@@ -1,6 +1,29 @@
 #git config --global core.excludesfile '(path_to)/.gitignore_global
 
-# remove all editor backup and swap files
+# remove all editor backup and swap files for emacs and vim
 *.swp
 *~
 .#*
+
+# OS X index files
+.DS_Store
+
+
+
+
+############################################################
+# other files to consider leaving out of vc
+############################################################
+#
+####################
+# sass temp files
+####################
+#.tmp
+#.sass-cache
+#
+####################
+# images in dev and production builds for gulp
+####################
+#builds/**/images/*
+#
+
