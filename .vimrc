@@ -2,7 +2,7 @@
 :set shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 
 " use smartindent for nicely indented code - should find out what autoindent does"
-set smartindent"
+set smartindent
 
 "highlight trailing whitespace as error"
 highlight ExtraWhitespace ctermbg=1 guibg=red
