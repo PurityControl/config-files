@@ -9,6 +9,12 @@ bindkey -e
 
 # history configuration settings
 ## share history across terminals an old command from the history file
-## if it is a duplicate of the command just entered (only the most recent 
+## if it is a duplicate of the command just entered (only the most recent
 ## execution of the command will show in history
 setopt histignorealldups sharehistory
+
+## Keep 1000000 lines of history within the shell
+HISTSIZE=1000000
+SAVEHIST=1000000
+HISTFILE=~/.zsh_history
+
