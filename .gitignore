@@ -1,0 +1,6 @@
+# These are the ignores for the project and not ignores set as 
+# part of the dotfiles
+
+# ignore emacs autosaveslist
+.emacs.d/auto-save-list
+
