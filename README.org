@@ -1,17 +1,19 @@
-config-files
-============
+#+TITLE: config-files
 
-# Dot Files
+
+* Dot Files
 To use the  dot files in the root directory of the repo sym link them to your home directory
 
-# Bin Directory
+* Bin Directory
 You need to ensure the bin directory is in your path
 
-## Bin Directory Scripts
+** Bin Directory Scripts
 
-### Prompt
+*** Prompt
 Usage:-
-```
+
+#+BEGIN_SRC bash
 source prompt [default|git]
-```
+#+END_SRC
+
 Sets the prompt to be customised to your environment
