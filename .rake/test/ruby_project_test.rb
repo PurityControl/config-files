@@ -61,4 +61,11 @@ class TestRubyProject < MiniTest::Unit::TestCase
     assert File.exists?(@new_project_test_file),
       "The project directory must have a new project test file"
   end
+
+  def test_creates_new_gemfile
+    @gemfile = File.join(@project_directory, 'Gemfile')
+    @task.invoke(@project_directory)
+    assert File.exists?(@gemfile),
+      "The project directory must have a Gemfile"
+  end
 end
