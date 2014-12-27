@@ -39,4 +39,26 @@ class TestRubyProject < MiniTest::Unit::TestCase
     assert Dir.exists?(@lib_directory),
       "The project directory must have a lib directory"
   end
+
+  def test_creates_Rakefile
+    @rakefile = File.join(@project_directory, 'Rakefile')
+    @task.invoke(@project_directory)
+    assert File.exists?(@rakefile),
+      "The project directory must have a Rakefile"
+  end
+
+  def test_creates_new_project_file
+    @new_project_file = File.join(@project_directory, 'lib', 'new_project.rb')
+    @task.invoke(@project_directory)
+    assert File.exists?(@new_project_file),
+      "The project directory must have a new project file"
+  end
+
+  def test_creates_new_project_test_file
+    @new_project_test_file = File.join(@project_directory,
+      'test', 'new_project_test.rb')
+    @task.invoke(@project_directory)
+    assert File.exists?(@new_project_test_file),
+      "The project directory must have a new project test file"
+  end
 end
