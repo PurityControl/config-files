@@ -19,6 +19,12 @@ set colorcolumn=+1
 " Remap jj to <Esc> in insert mode
 :imap jj <Esc>
 
+" Switch ; and : mappings so ed commands don't require shift key
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
