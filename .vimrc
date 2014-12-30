@@ -16,6 +16,9 @@ set nowritebackup
 set textwidth=80
 set colorcolumn=+1
 
+" Remap jj to <Esc> in insert mode
+:imap jj <Esc>
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
