@@ -4,6 +4,9 @@
 " use smartindent for nicely indented code - should find out what autoindent does"
 set smartindent
 
+" use syntax highlighting
+syntax on
+
 "highlight trailing whitespace as error"
 highlight ExtraWhitespace ctermbg=1 guibg=red
 :match ExtraWhitespace /\s\+$/
