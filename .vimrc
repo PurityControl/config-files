@@ -15,6 +15,9 @@ highlight ExtraWhitespace ctermbg=1 guibg=red
 set nobackup
 set nowritebackup
 
+" set print options for hardcopy
+set printoptions=paper:a4,duplex:on
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
