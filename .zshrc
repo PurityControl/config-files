@@ -18,3 +18,7 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 HISTFILE=~/.zsh_history
 
+# Use modern completion system
+autoload -Uz compinit
+compinit
+
