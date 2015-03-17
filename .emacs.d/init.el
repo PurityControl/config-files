@@ -41,3 +41,12 @@
 (global-set-key [f12] 'evil-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(setq dotfile-dir (file-name-directory
+                   (or (buffer-file-name) load-file-name)))
+(add-to-list 'load-path dotfile-dir)
+(require 'key-chord)
+(key-chord-mode 1)
+(evil-mode 0)
+(key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+(define-key evil-motion-state-map ";" 'evil-ex)
