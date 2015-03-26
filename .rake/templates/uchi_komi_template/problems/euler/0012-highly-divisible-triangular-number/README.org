@@ -1,4 +1,4 @@
-#+TITLE: Highyl Divisible Triangular Number
+#+TITLE: Highly Divisible Triangular Number
 
 * Problem description
 
