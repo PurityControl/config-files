@@ -4,13 +4,13 @@
 
 GEDCOM Parser
 
-The purpose of this quiz is to develop a simple parser than can convert
+The purpose of this quiz is to develop a simple parser that can convert
 a GEDCOM file to XML.
 
 GEDCOM is the "GEnealogical Data COMmunication" file format.
 It is a plain-text electronic format used to transfer genealogical data.
 (The purpose of this quiz is not to debate whether it is a
-particularly *good* file format or not--but it is certainly more compact
+particularly *good* file format or not - but it is certainly more compact
 than the corresponding XML would be, and bandwidth was particularly important
 back when the standard was developed.)
 
