@@ -1,11 +1,14 @@
 " set tabs to spaces "
 :set shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 
-" use smartindent for nicely indented code - should find out what autoindent does"
+" use smartindent for nicely indented code - find out what autoindent does"
 set smartindent
 
 " use syntax highlighting
 syntax on
+
+" turn on line numbering by default
+set number
 
 "highlight trailing whitespace as error"
 highlight ExtraWhitespace ctermbg=1 guibg=red
