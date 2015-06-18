@@ -44,7 +44,7 @@
 
 (setq dotfile-dir (file-name-directory
                    (or (buffer-file-name) load-file-name)))
-(add-to-list 'load-path dotfile-dir)
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/key-chord"))
 (require 'key-chord)
 (key-chord-mode 1)
 (evil-mode 0)
