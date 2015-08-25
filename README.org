@@ -29,3 +29,10 @@ source prompt [default|git]
 #+END_SRC
 
 Sets the prompt to be customised to your environment
+
+* Doc Directory
+This directory contains useful information on applications that have
+a dotfile in this repo.
+
+As such it acts as a useful documentation resource for those applications
+when cloning the repository. 

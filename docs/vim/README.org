@@ -1,0 +1,11 @@
+#+TITLE: VIM
+
+* Useful commands to remember
+
+** Line numbering
+Toggle line numbering with the following commands
+
+#+BEGIN_SRC vim
+:set number
+:set nonumber
+#+END_SRC
