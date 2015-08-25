@@ -1,4 +1,4 @@
-#+TITLE VIM
+#+TITLE: VIM
 
 * Useful commands to remember
 
