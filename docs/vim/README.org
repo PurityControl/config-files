@@ -9,3 +9,23 @@ Toggle line numbering with the following commands
 :set number
 :set nonumber
 #+END_SRC
+
+* HELP
+
+** Generic help
+
+Simply type ~:help~ or ~F1~ key to get into vims generic help.
+
+This has lots of good information including how to jump in and out of files.
+
+** Jump in and out of files
+
+~CTRL - ]~ will jump into a topic that is tagged (between bars)
+~CTRL - O~ or ~CTRL -T~ will jump back.
+
+** Specific help
+
+To get help on a specific topic
+
+~:help topic~
+
