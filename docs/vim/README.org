@@ -10,6 +10,12 @@ Toggle line numbering with the following commands
 :set nonumber
 #+END_SRC
 
+** Ex Commands
+
+- @: :: repeat last command
+- :{range}t{address} :: copy range of lines to line below specified address
+- :{range}m{address} :: move range of lines to line below specified address
+
 * HELP
 
 ** Generic help
