@@ -1,0 +1,22 @@
+#+TITLE: EMACS
+
+* HELP
+
+Take time to read the opening screen on Emacs it explains all the help
+available to you.
+
+Most of emacs help is accessed using the <C-h> prefix and then a further
+command to refine the type of help you need.
+
+In Emacs info is your frield you can view a list of all the manual avaiable
+with ~<C-h i>~
+
+In emacs just pressing ~<C-h>~ and pausing will explain ~?~ gives further
+information on help available
+
+** Summary of help commands (also see Emacs opening screen)
+
+- ~<C-h t>~ :: Emacs introductory tutorial
+- ~<C-h r>~ :: Emacs manual
+- ~<C-h i>~ :: Browse Manuals (the lisp tutorial and reference manual is here)
+- ~<C-h ?>~ :: List all available help options
