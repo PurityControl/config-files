@@ -8,7 +8,7 @@ available to you.
 Most of emacs help is accessed using the <C-h> prefix and then a further
 command to refine the type of help you need.
 
-In Emacs info is your frield you can view a list of all the manual avaiable
+In Emacs ~info~ is your frield you can view a list of all the manual avaiable
 with ~<C-h i>~
 
 In emacs just pressing ~<C-h>~ and pausing will explain ~?~ gives further
