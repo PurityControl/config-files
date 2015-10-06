@@ -7,6 +7,12 @@
 ;; use spaces for tabs
 (setq-default indent-tabs-mode nil)
 
+;; set default font size based on operating system
+;; height is in 1/10 pt
+(cond
+ ((eq system-type 'darwin)
+  (set-face-attribute 'default nil :height 160)))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; PACKAGE INSTALLATION
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
