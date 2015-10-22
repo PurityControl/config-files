@@ -7,6 +7,10 @@
 ;; use spaces for tabs
 (setq-default indent-tabs-mode nil)
 
+;; load up local conf if it exists
+(if (file-exists-p (expand-file-name "~/.emacs.d.local"))
+    (load-file (expand-file-name "~/.emacs.d.local")))
+
 ;; set default font size based on operating system
 ;; height is in 1/10 pt
 (cond
