@@ -33,7 +33,10 @@
 
 ;; list the packages you want to install - will be preserved in src control
 (defvar my-packages '(magit
-                      evil))
+                      evil
+                      elixir-mode
+                      alchemist
+                      go-mode))
 
 ;; install the packages  if not installed
 (dolist (p my-packages)
