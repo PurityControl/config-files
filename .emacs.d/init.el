@@ -7,6 +7,11 @@
 ;; use spaces for tabs
 (setq-default indent-tabs-mode nil)
 
+;; setup ido mode acroos the board
+(ido-mode 1)
+(setq ido-everywhere t)
+(setq ido-enable-flex-matching t)
+
 ;; load up local conf if it exists
 (if (file-exists-p (expand-file-name "~/.emacs.d.local"))
     (load-file (expand-file-name "~/.emacs.d.local")))
