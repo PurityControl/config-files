@@ -7,6 +7,9 @@
 ;; use spaces for tabs
 (setq-default indent-tabs-mode nil)
 
+;; enable column-mode by default
+(setq column-number-mode t)
+
 ;; setup ido mode acroos the board
 (ido-mode 1)
 (setq ido-everywhere t)
