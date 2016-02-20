@@ -46,5 +46,21 @@ for the change commands (~ct~). Remember that you can repeat commands with
 ~C-x z~ if you get the count wrong, but does repeat with the same numberic
 argument.
 
+* Point after incremental search
+
+When searching backwards ~C=r~ the point always finished at the start
+of the word you are searching for.  When searching forwards ~C-s~ the point
+rests after the characters searched for.  In many cases this is part
+of the way through a word, and in many cases the desired behaviour
+would be to have the point at the start of the word so the word can be
+easily edited without first having to move the point.
+One solution is to write a custom function to change emacs behaoviour,
+see the dicsussion [[https://www.emacswiki.org/emacs/IncrementalSearch][here]].
+Alternatively just hitting ~C-r RET~ after your forward search will bring
+the point back to the start of the word.
+In Vim it is common to search forward ~/~ and change a word ~cw~ then
+continue to search forward ~/~ and repeat the last change ~.~. This allows
+you to make quick edits interactively.
+In Emacs a better approach would be query search and replace ~M-%~.
 
 
