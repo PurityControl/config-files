@@ -64,3 +64,15 @@ you to make quick edits interactively.
 In Emacs a better approach would be query search and replace ~M-%~.
 
 
+* Transposing text
+Emacs allows text to be transposed with the following commands
+
+| Key Binding | Command                                   |
+|-------------+-------------------------------------------|
+| C-t         | Transpose characters                      |
+| M-t         | Transpose words                           |
+| C-M-t       | Transpose s-expressions                   |
+| C-x C-t     | Transpose lines                           |
+| M-x         | transpose-paragraphs Transpose paragraphs |
+| M-x         | transpose-sentences Transpose sentences   |
+|-------------+-------------------------------------------|
