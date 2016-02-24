@@ -76,3 +76,18 @@ Emacs allows text to be transposed with the following commands
 | M-x         | transpose-paragraphs Transpose paragraphs |
 | M-x         | transpose-sentences Transpose sentences   |
 |-------------+-------------------------------------------|
+
+* Filling text
+Emacs will take a long line of text and reformat it to multiples lines
+of text not exceeding a certain size. That size is determined by the
+~fill width~.
+
+| Key Binding        | Command                           |
+|--------------------+-----------------------------------|
+| M-q                | Refills the paragraph point is in |
+| C-x f              | Sets the fill column width        |
+| C-x .              | Sets the fill prefix              |
+| M-x auto-fill-mode | Toggles auto-filling              |
+|--------------------+-----------------------------------|
+
+
