@@ -91,3 +91,14 @@ of text not exceeding a certain size. That size is determined by the
 |--------------------+-----------------------------------|
 
 
+* Commenting
+Emacs has the following features for easily commenting code
+
+| Key Binding     | Command                                                          |
+|-----------------+------------------------------------------------------------------|
+| M-;             | Intelligently comment buffer                                     |
+| C-x C-;         | toggle line comment                                              |
+| M-x comment-box | Comment region in a comment box                                  |
+| M-j, C-M-j      | Break line at point and indent, continuing comment if within one |
+|-----------------+------------------------------------------------------------------|
+
