@@ -102,3 +102,13 @@ Emacs has the following features for easily commenting code
 | M-j, C-M-j      | Break line at point and indent, continuing comment if within one |
 |-----------------+------------------------------------------------------------------|
 
+* Removing lines
+Over and above Emacs' standard process of killing lines, you can
+remove or keep all lines in a file based on a pattern
+
+| Command         | Description                                         |
+|-----------------+-----------------------------------------------------|
+| M-x flush-lines | remove all lines in a region that match the pattern |
+| M-x keep-lines  | keep all lines in a regions that match the pattern  |
+|-----------------+-----------------------------------------------------|
+
