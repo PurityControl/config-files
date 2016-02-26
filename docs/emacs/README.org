@@ -91,3 +91,25 @@ of text not exceeding a certain size. That size is determined by the
 |--------------------+-----------------------------------|
 
 
+* Commenting
+Emacs has the following features for easily commenting code
+
+| Key Binding     | Command                                                          |
+|-----------------+------------------------------------------------------------------|
+| M-;             | Intelligently comment buffer                                     |
+| C-x C-;         | toggle line comment                                              |
+| M-x comment-box | Comment region in a comment box                                  |
+| M-j, C-M-j      | Break line at point and indent, continuing comment if within one |
+|-----------------+------------------------------------------------------------------|
+
+* Removing lines 
+Over and above Emacs' standard process of killing lines, you can
+remove or keep all lines in a file based on a pattern
+
+| Command         | Description                                         |
+|-----------------+-----------------------------------------------------|
+| M-x flush-lines | remove all lines in a region that match the pattern |
+| M-x keep-lines  | keep all lines in a regions that match the pattern  |
+|-----------------+-----------------------------------------------------|
+
+
