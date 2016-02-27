@@ -112,3 +112,18 @@ remove or keep all lines in a file based on a pattern
 | M-x keep-lines  | keep all lines in a regions that match the pattern  |
 |-----------------+-----------------------------------------------------|
 
+* Joining and splitting lines
+The joining and splitting lines commands are as follows.
+
+| Key Binding | Description                                      |
+|-------------+--------------------------------------------------|
+| C-o         | Splits the line after point                      |
+| C-x C-o     | Deletes all blank lines between current line and |
+|             | next line of text                                |
+| C-M-o       | Splits the line after point indenting new line   |
+|             | to position of point                             |
+| M-^         | Join the line point is on with the point above   |
+|             | if given an argument joins with line below.      |
+|-------------+--------------------------------------------------|
+
+
