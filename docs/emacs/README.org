@@ -128,6 +128,11 @@ The joining and splitting lines commands are as follows.
 Emacs can change the case of words and regions.
 Capitalisation of words is fairly common but regions less so.
 
+** Prefixes
+Prefixed arguments do what you would expect to the word commands.
+Numbered arguments change the number of words affected.
+Negative argument affect previous words.
+
 | Key Bndings                | Description          |
 |----------------------------+----------------------|
 | M-c                        | Capitalise next word |
