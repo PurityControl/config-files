@@ -124,3 +124,17 @@ The joining and splitting lines commands are as follows.
 |-------------+--------------------------------------------------------------------------------------------|
 
 
+* Capitalisation
+Emacs can change the case of words and regions.
+Capitalisation of words is fairly common but regions less so.
+
+| Key Bndings                | Description          |
+|----------------------------+----------------------|
+| M-c                        | Capitalise next word |
+| M-u                        | Uppercases next word |
+| M-l                        | Lowercase next word  |
+| M-x upcase-initials-region | Capitalize region    |
+| C-x C-u                    | Uppercase region     |
+| C-x C-l                    | Lowercase region     |
+|----------------------------+----------------------|
+
