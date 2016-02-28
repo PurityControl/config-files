@@ -124,3 +124,22 @@ The joining and splitting lines commands are as follows.
 |-------------+--------------------------------------------------------------------------------------------|
 
 
+* Capitalisation
+Emacs can change the case of words and regions.
+Capitalisation of words is fairly common but regions less so.
+
+** Prefixes
+Prefixed arguments do what you would expect to the word commands.
+Numbered arguments change the number of words affected.
+Negative argument affect previous words.
+
+| Key Bndings                | Description                        |
+|----------------------------+------------------------------------|
+| M-c                        | Capitalise next (previous) word(s) |
+| M-u                        | Uppercases next (previous) word(s) |
+| M-l                        | Lowercase next (previous) word(s)  |
+| M-x upcase-initials-region | Capitalize region                  |
+| C-x C-u                    | Uppercase region                   |
+| C-x C-l                    | Lowercase region                   |
+|----------------------------+------------------------------------|
+
