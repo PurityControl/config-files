@@ -45,8 +45,12 @@
 (defvar my-packages '(magit
                       evil
                       elixir-mode
-                      alchemist
                       go-mode))
+
+;; alchemist only supported on emacs 24.4 and later
+(when (and (>= emacs-major-version 24)
+           (>= emacs-minor-version 4))
+  (add-to-list 'my-packages 'alchemist))
 
 ;; install the packages  if not installed
 (dolist (p my-packages)
