@@ -35,3 +35,20 @@ To get help on a specific topic
 
 ~:help topic~
 
+* Vimrc and alternative configurations
+All configutations are stored in a ~.vimrc~ file. This file is loaded
+by default when you launch vim. Howerver vim can be launced with an
+alternative configuration file using the ~-u~ switch.
+
+This can be useful for things such as:
+- playing vimgolf without amending your vim configuration
+- for testing out new configurations
+- for using a special configuration for a specialised task
+- for vim / vimscript learning in a safe enviroment
+
+To launch vim you a configuration file called ~my_vim_config~ in your
+home directory you would enter the command:
+
+#+BEGIN_SRC shell
+vim -u ~/my_vim_config
+#+END_SRC
