@@ -86,3 +86,25 @@
 (evil-mode 0)
 (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
 (define-key evil-motion-state-map ";" 'evil-ex)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Install use-package if it's not already installed.            ;;
+;; package-refresh-contents ensure packages loaded in new emacs. ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; From use-package README ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)
+(require 'bind-key)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Load the org config file ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(org-babel-load-file (concat user-emacs-directory "config.org"))
