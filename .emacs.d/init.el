@@ -42,8 +42,7 @@
 
 
 ;; list the packages you want to install - will be preserved in src control
-(defvar my-packages '(magit
-                      evil
+(defvar my-packages '(evil
                       elixir-mode
                       go-mode))
 
