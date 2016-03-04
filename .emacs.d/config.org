@@ -37,6 +37,28 @@ Magit describes itself as a porcelain for git.
          ("C-x C-f" . helm-find-files)))
 #+end_src
 
+** Evil Mode
+Evil mode bring vim emulation to emacs. I have added the keychord
+dependency so that I can emulate my custome vim bindings. This allows
+me to map ~jj~ to escape back into ~normal mode~
+I have also mapped the ~;~ key to call ex commands to avoid the need
+to use the shift key.
+
+#+begin_src emacs-lisp
+(use-package evil
+  :ensure t
+  :init
+  (use-package key-chord
+     :load-path "key-chord"
+     :config (key-chord-mode 1))
+  :config
+  (evil-mode 0)
+  (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+  (define-key evil-motion-state-map ";" 'evil-ex)
+  :bind (([f12] . evil-mode)))
+
+#+end_src
+
 ** Go Mode
 Go Mode has a hideous tab length so make it 2 by default.
 
