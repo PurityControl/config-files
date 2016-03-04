@@ -37,6 +37,18 @@ Magit describes itself as a porcelain for git.
          ("C-x C-f" . helm-find-files)))
 #+end_src
 
+** Go Mode
+Go Mode has a hideous tab length so make it 2 by default.
+
+#+begin_src emacs-lisp
+(use-package go-mode
+  :init
+  (add-hook 'go-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode t)
+            (setq tab-width 2))))
+#+end_src
+
 ** Alchemist
 Alchemist is a tool for Elixir it has support for phoenix and
 integrates with mix.

@@ -42,23 +42,12 @@
 
 
 ;; list the packages you want to install - will be preserved in src control
-(defvar my-packages '(evil
-                      go-mode))
+(defvar my-packages '(evil))
 
 ;; install the packages  if not installed
 (dolist (p my-packages)
   (unless (package-installed-p p)
     (package-install p)))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;; CUSTOM TABS IN GO MODE
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-hook 'go-mode-hook
-          (lambda ()
-            (setq indent-tabs-mode t)
-            (setq tab-width 2)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
