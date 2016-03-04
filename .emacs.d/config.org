@@ -36,3 +36,17 @@ Magit describes itself as a porcelain for git.
          ("M-x" . helm-M-x)
          ("C-x C-f" . helm-find-files)))
 #+end_src
+
+** Alchemist
+Alchemist is a tool for Elixir it has support for phoenix and
+integrates with mix.
+
+Alchemist is only supported on emacs 24.4 and later
+
+#+begin_src emacs-lisp
+(use-package alchemist
+  :if (and (>= emacs-major-version 24)
+           (>= emacs-minor-version 4))
+  :init
+  (use-package elixir-mode))
+#+end_src
