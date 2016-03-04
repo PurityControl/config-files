@@ -72,6 +72,18 @@ Some textmate bundles can be used by yasnippet.
   (yas-global-mode))
 #+end_src
 
+** Emmet mode
+Emmet mode allows you to create html rapidly using css style commands.
+
+#+begin_src emacs-lisp
+(use-package emmet-mode
+  :ensure t
+  :commands emmet-mode
+  :config
+  (add-hook 'html-mode-hook 'emmet-mode)
+  (add-hook 'css-mode-hook 'emmet-mode))
+#+end_src
+
 ** Go Mode
 Go Mode has a hideous tab length so make it 2 by default.
 
