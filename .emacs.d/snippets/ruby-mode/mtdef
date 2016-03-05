@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: rails minitest def
+# group : tests
+# key: mtdef
+# --
+test "${1:test-description}" do
+    $0
+end
