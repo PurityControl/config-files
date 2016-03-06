@@ -1,5 +1,6 @@
 #+TITLE: Attribution
 
+* Attribution
 The following sources of information have been a significant help in
 setting up my configurations.
 
@@ -10,3 +11,8 @@ setting up my configurations.
 | vim         | [[http://learnvimscriptthehardway.stevelosh.com][Steve Losh]]      |
 |-------------+-----------------|
 
+* Useful Resources
+Below is a list of sites that contain useful information for setting
+up dotfiles.
+
+- [[https://dotfiles.github.io]]
