@@ -31,3 +31,8 @@ a dotfile in this repo.
 
 As such it acts as a useful documentation resource for those applications
 when cloning the repository. 
+
+* Attribution
+It is impossible to fully acknowledge or attribute all sources of
+inspiration for the config files. Wwhere possible significant sources
+are listed in the [[file:attribution.org][attribution]] file.
