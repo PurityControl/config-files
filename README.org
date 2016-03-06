@@ -1,6 +1,4 @@
 #+TITLE: config-files
-
-
 * Dot Files
 To use the  dot files in the root directory of the repo sym link them to your home directory
 
@@ -14,7 +12,6 @@ download the cache then exit and rerun emacs.
 : M-x package-list-packages #download package list
 : C-X C-c # quit emacs
 : emacs # relaunch emacs and packages will be installed
-
 
 * Bin Directory
 You need to ensure the bin directory is in your path
