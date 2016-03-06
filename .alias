@@ -1,0 +1,11 @@
+# a file containing all aliases used
+
+# ruby aliases
+alias be="bundle exec"
+alias berdbm="bundle exec rake db:migrate"
+alias ber="bundle exec rake"
+alias bers="bundle exec rails server"
+alias bedbc="bundle exec rails dbconsole"
+
+alias g="git"
+alias gc="git commit --verbose"
