@@ -1,0 +1,12 @@
+#+TITLE: Attribution
+
+The following sources of information have been a significant help in
+setting up my configurations.
+
+| Config Type | Author / Source |
+|-------------+-----------------|
+| tmux, vim   | [[https://github.com/chrishunt/dot-files][Chris Hunt]]      |
+| emacs       | [[https://github.com/danielmai/.emacs.d][Daniel Mai]]      |
+| vim         | [[http://learnvimscriptthehardway.stevelosh.com][Steve Losh]]      |
+|-------------+-----------------|
+

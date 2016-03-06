@@ -1,20 +1,15 @@
 #+TITLE: config-files
-
-
 * Dot Files
-To use the  dot files in the root directory of the repo sym link them to your home directory
+To use the dot files in the root directory of the repo sym link them
+to your home directory
 
 * Emacs config
-Currently the emacs config script struggles the first time emacs is loaded.
-It is configured to install packages from its config but needs a cache
-of the package repository to work from. To get round this you need to
-download the cache then exit and rerun emacs.
+Emacs now uses use-package in an org mode file for its [[file:.emacs.d/config.org][configuration]].
+This makes it easy to understand the configuration because notes can
+easily be embedded explaining the configuration.
 
-: emacs  # launch emacs
-: M-x package-list-packages #download package list
-: C-X C-c # quit emacs
-: emacs # relaunch emacs and packages will be installed
-
+To use the config simply link to the ~.emacs.d~ directory and emacs
+will fully configure itself on launch
 
 * Bin Directory
 You need to ensure the bin directory is in your path
@@ -36,3 +31,8 @@ a dotfile in this repo.
 
 As such it acts as a useful documentation resource for those applications
 when cloning the repository. 
+
+* Attribution
+It is impossible to fully acknowledge or attribute all sources of
+inspiration for the config files. Wwhere possible significant sources
+are listed in the [[file:attribution.org][attribution]] file.
