@@ -1,3 +1,13 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Set windowed interface before immediately to prevent choppy ui changes ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(when window-system
+  (menu-bar-mode 1)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
+  (tooltip-mode 1))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Set Package repositories ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
