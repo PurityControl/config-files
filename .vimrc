@@ -4,6 +4,9 @@
 " use smartindent for nicely indented code - find out what autoindent does"
 set smartindent
 
+" make the command history more than the default 20
+set history=500
+
 " use syntax highlighting
 syntax on
 
