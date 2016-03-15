@@ -107,7 +107,8 @@ Some textmate bundles can be used by yasnippet.
   :defer 10
   :diminish yas-minor-mode
   :config
-  (yas-global-mode))
+  (yas-global-mode)
+  (add-hook 'term-mode-hook (lambda () (yas-minor-mode -1))))
 #+end_src
 
 ** Emmet mode
