@@ -172,3 +172,22 @@ replacing the standard out of the box functionality of emacs.
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 #+END_SRC
+
+* Org files for config
+
+Babel in org mode allows emacs_lisp to be sourced from an org file and
+loaded. This makes it possible to put most of an emacs configuration
+in an org mode file and bootstrap it from a minimal ~init.el~ file.
+This gives the advantage of being able to efficiently document the
+configuration file so that it is easier to understand and maintain.
+
+** Useful key bindings
+
+| key binding | description                                |
+|-------------+--------------------------------------------|
+| <s<TAB>     | create a BEGIN_SRC / END_SRC block         |
+| <C-c>'      | move to mode specific buffer to write code |
+|-------------+--------------------------------------------|
+
+
+
