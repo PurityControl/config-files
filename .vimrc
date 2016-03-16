@@ -44,3 +44,7 @@ endif
 
 " % matches {}, [], () by default add <> "
 set matchpairs+=<:>
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+

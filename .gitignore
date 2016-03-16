@@ -11,3 +11,9 @@
 # ignore the babel compiled el file from config.org
 .emacs.d/config.el
 
+# ignore editor swap files etc.
+*~
+\#*\#
+*.swp
+*.swo
+
