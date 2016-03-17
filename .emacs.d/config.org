@@ -155,18 +155,18 @@ If it does then the erlang emacs tools are loaded.
   (let* ((erlang-ver "7.2.1")
          (tools-ver "2.8.2")
          (erlang-dir (cond
-                      ((eq system-type 'darwin) "/opt/local/lib/erlang/lib/")
+                      ((eq system-type 'darwin) "/opt/local/lib/erlang")
                       ((eq system-type 'windows-nt) (concat "C:/Program Files/erl" erlang-ver))
                       (t nil)))
          (erlang-emacs-tools-dir (concat erlang-dir "/lib/tools-" tools-ver "/emacs"))
-         (erland-exec-path (concat erlang-dir "/bin")))
+         (erlang-exec-path (concat erlang-dir "/bin")))
     (use-package erlang-start
       :if
       (and erlang-dir (file-exists-p  erlang-dir))
       :init
-      (setq erlang-root-dir "/opt/local/lib/erlang")
-      (setq exec-path (cons "/opt/local/lib/erlang/bin" exec-path))
-      :load-path "/opt/local/lib/erlang/lib/tools-2.8.2/emacs"))
+      (setq erlang-root-dir erlang-dir)
+      (setq exec-path (cons erlang-exec-path exec-path))
+      :load-path erlang-emacs-tools-dir))
 #+END_SRC
 
 ** Alchemist
