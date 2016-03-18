@@ -52,3 +52,17 @@ home directory you would enter the command:
 #+BEGIN_SRC shell
 vim -u ~/my_vim_config
 #+END_SRC
+
+** set nocp gotcha
+
+When vim is launched and you have a ~/.vimrc file then ~set nocp~ is
+enabled by default and you do not have to enable it explicitly.
+If you don't enable it vim will be backward compatible with vi and
+some vim features won't work.
+
+When launching vim with a custom config file you need to either:
+
+- ~set nocp~ in your custom config file
+- launch ~-N~ swithch
+  ~vim -Nu my_vim_config~
+
