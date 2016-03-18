@@ -36,7 +36,7 @@ To get help on a specific topic
 ~:help topic~
 
 * Vimrc and alternative configurations
-All configutations are stored in a ~.vimrc~ file. This file is loaded
+All configutations are stored in a =~/.vimrc= file. This file is loaded
 by default when you launch vim. Howerver vim can be launced with an
 alternative configuration file using the ~-u~ switch.
 
@@ -55,7 +55,7 @@ vim -u ~/my_vim_config
 
 ** set nocp gotcha
 
-When vim is launched and you have a ~/.vimrc file then ~set nocp~ is
+When vim is launched and you have a =~/.vimrc= file then =set nocp= is
 enabled by default and you do not have to enable it explicitly.
 If you don't enable it vim will be backward compatible with vi and
 some vim features won't work.
@@ -63,6 +63,6 @@ some vim features won't work.
 When launching vim with a custom config file you need to either:
 
 - ~set nocp~ in your custom config file
-- launch ~-N~ swithch
+- launch ~-N~ switch
   ~vim -Nu my_vim_config~
 
