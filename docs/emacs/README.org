@@ -189,5 +189,14 @@ configuration file so that it is easier to understand and maintain.
 | <C-c>'      | move to mode specific buffer to write code |
 |-------------+--------------------------------------------|
 
+* Showing line number
 
+Line numbers can be toggled using linum-mode
 
+To toggle line numbering in the current buffer
+
+~<M-x> linum-mode~
+
+To toggle line numbering across all buffers
+
+~<M-x> global-linum-mode~
