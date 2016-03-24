@@ -210,6 +210,27 @@ configuration file so that it is easier to understand and maintain.
 | <C-c>'      | move to mode specific buffer to write code |
 |-------------+--------------------------------------------|
 
+
+** Export to pdf
+
+Exporting to pdf requires that you have the necessary latex binaries
+installed.
+
+The texlive website has a [[https://www.tug.org/texlive/quickinstall.html][quick install page]] that describes how to get
+setup.
+
+** OSX texlive install
+
+The link above recommends installing [[https://www.tug.org/texlive/quickinstall.html][MacTEX]] but I installed the
+relevant packages using ~ports~
+
+- install [[https://www.macports.org/install.php][macports]]
+- sudo port install texlive
+- sudo port install texlive-latex-extra
+
+This installed all the packages I needed to export to pdf from org
+mode and to export to pdf from Rmarkdown in RStudio.
+
 * Showing line number
 
 Line numbers can be toggled using linum-mode
