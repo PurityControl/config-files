@@ -41,7 +41,10 @@ to be declared and for emacs this is ~emacs-lisp~
 #+end_src
 ** Set languages recognised by org babel
 
-Babel in org mode needs a list of languages supported
+Babel in org mode needs a list of languages supported.
+By default only emacs-lisp is set.
+For more information on babel in org mode see the
+[[http://orgmode.org/worg/org-contrib/babel/intro.html][documentation]].
 
 #+BEGIN_SRC emacs-lisp
   (org-babel-do-load-languages
@@ -52,6 +55,11 @@ Babel in org mode needs a list of languages supported
 #+END_SRC
 
 ** Make OSX graphical emacs have same path as shell
+
+Graphical Emacs in OSX will not have the same path as the path in bash
+and therefore the path that emacs launched from the terminal has. The
+~exec-path-from-shell~ package fixes this. This allows it to find
+babel languages such as ~R~ that it couldn't before.
 
 #+BEGIN_SRC emacs-lisp
 (use-package exec-path-from-shell
