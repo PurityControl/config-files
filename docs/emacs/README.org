@@ -221,7 +221,7 @@ setup.
 
 ** OSX texlive install
 
-The link above recommends installing [[https://www.tug.org/texlive/quickinstall.html][MacTEX]] but I installed the
+The link above recommends installing [[https://www.tug.org/mactex/][MacTEX]] but I installed the
 relevant packages using ~ports~
 
 - install [[https://www.macports.org/install.php][macports]]
