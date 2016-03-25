@@ -50,6 +50,7 @@ For more information on babel in org mode see the
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((R . t)
+     (scheme . t)
      (emacs-lisp . t)
      ))
 #+END_SRC
@@ -152,6 +153,30 @@ Emmet mode allows you to create html rapidly using css style commands.
   (add-hook 'css-mode-hook 'emmet-mode))
 #+end_src
 
+** Geiser mode and Racket for Scheme
+
+   Start geiser with ~M-x run-geiser~
+
+   Racket can be used as the scheme implementation for org babel mode
+   and geiser mode.
+   Setting the ~geiser-defualt-implementation~ only sets which scheme
+   is used for org babel. You still have to choose which scheme
+   implementation to use when launching a geiser repl.
+
+   In order to use racket in emacs on windows it must be able to find
+   the racket executable. There are many ways to do this but the most
+   straight forward is to add the path to the executable to the
+   windows ~PATH~ variable.
+
+   =%ProgramFiles%\racket=
+
+   #+BEGIN_SRC emacs-lisp
+     (use-package geiser
+       :config
+       (add-hook 'scheme-mode-hook 'geiser-mode)
+       (setq geiser-default-implementation 'racket))
+   #+END_SRC
+   
 ** Go Mode
 Go Mode has a hideous tab length so make it 2 by default.
 
