@@ -55,6 +55,16 @@ For more information on babel in org mode see the
      ))
 #+END_SRC
 
+** Configure exports in org mode
+
+By default markdown isn't enabled as an export option in org mode.
+It has to be explicity enabled.
+
+#+BEGIN_SRC emacs-lisp
+(eval-after-load "org"
+  '(require 'ox-md nil t))
+#+END_SRC
+
 ** Make OSX graphical emacs have same path as shell
 
 Graphical Emacs in OSX will not have the same path as the path in bash
