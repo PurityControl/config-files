@@ -228,8 +228,8 @@ whether that directory exists on the current machine.
 If it does then the erlang emacs tools are loaded.
 
 #+BEGIN_SRC emacs-lisp
-  (let* ((erlang-ver "7.2.1")
-         (tools-ver "2.8.2")
+  (let* ((erlang-ver "7.3")
+         (tools-ver "2.8.3")
          (erlang-dir (cond
                       ((eq system-type 'darwin) "/opt/local/lib/erlang")
                       ((eq system-type 'windows-nt) (concat "C:/Program Files/erl" erlang-ver))
