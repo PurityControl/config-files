@@ -52,6 +52,9 @@ For more information on babel in org mode see the
    '((R . t)
      (scheme . t)
      (emacs-lisp . t)
+     (lisp . t)
+     (ruby . t)
+     (python .t)
      ))
 #+END_SRC
 
@@ -162,6 +165,23 @@ Emmet mode allows you to create html rapidly using css style commands.
   (add-hook 'html-mode-hook 'emmet-mode)
   (add-hook 'css-mode-hook 'emmet-mode))
 #+end_src
+
+** Use slime for common lisp
+
+Load slime if installed and set the default lisp implementation to be
+used by slime.
+More information about using multiple lisps in slime can be found in
+the [[https://common-lisp.net/project/slime/doc/html/Multiple-Lisps.html][slime manual]]. This information can also be found within emacs in
+info mode.
+To use gnu common lisp in emacs just add the slime package to emacs and install
+[[http://www.clisp.org][Common Lisp]] on your machine. This config will do the rest.
+
+#+BEGIN_SRC emacs-lisp
+  (use-package slime
+    :config
+    (setq inferior-lisp-program "clisp"))
+
+#+END_SRC
 
 ** Geiser mode and Racket for Scheme
 
