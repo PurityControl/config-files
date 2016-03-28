@@ -52,6 +52,9 @@ For more information on babel in org mode see the
    '((R . t)
      (scheme . t)
      (emacs-lisp . t)
+     (lisp . t)
+     (ruby . t)
+     (python .t)
      ))
 #+END_SRC
 
