@@ -219,6 +219,20 @@ installed.
 The texlive website has a [[https://www.tug.org/texlive/quickinstall.html][quick install page]] that describes how to get
 setup.
 
+** Windows texlive install
+
+There is Tex / Latex implementation for windows called
+[[http://miktex.org][MikTex]]. There is also a MikTex package on
+[[https://chocolatey.org][Chocolatey]] if you want to install it that way.
+
+The MikTex package is special in so far as there is a basic install
+but it is able to detect if other packages are needed and can install
+them for you on the fly (either automatically or with your permission
+depending upon how you set it up). This means if you export to pdf
+from org mode, instead of needing a full installation, you can have a
+basic install and it will only donwload the extra required packages
+needed for the export.
+
 ** OSX texlive install
 
 The link above recommends installing [[https://www.tug.org/mactex/][MacTEX]] but I installed the
