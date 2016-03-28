@@ -173,6 +173,8 @@ used by slime.
 More information about using multiple lisps in slime can be found in
 the [[https://common-lisp.net/project/slime/doc/html/Multiple-Lisps.html][slime manual]]. This information can also be found within emacs in
 info mode.
+To use gnu common lisp in emacs just add the slime package to emacs and install
+[[http://www.clisp.org][Common Lisp]] on your machine. This config will do the rest.
 
 #+BEGIN_SRC emacs-lisp
   (use-package slime
