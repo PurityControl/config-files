@@ -5,6 +5,7 @@
 .emacs.d/auto-save-list
 .emacs.d/elpa
 .emacs.d/eshell
+.emacs.d/bookmarks
 .emacs.d/url
 .emacs.d/ido.last
 
