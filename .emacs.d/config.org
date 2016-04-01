@@ -39,6 +39,22 @@ to be declared and for emacs this is ~emacs-lisp~
  ((eq system-type 'darwin)
   (set-face-attribute 'default nil :height 160)))
 #+end_src
+** Set custom keybindings
+   *** F12 Key Chord Bindings
+   F12 will act as the first part of a key combination for customised
+   key bindings.
+   First explicitly set F12 to nil so it is not used as a key binding
+   on its own.
+   And reserve F12 F12 as will be used to trigger evil mode later
+   #+BEGIN_SRC emacs-lisp
+     (define-prefix-command 'f12-keymap)
+     (global-set-key (kbd "<f12>") 'f12-keymap)
+     (global-set-key (kbd "<f12><f12>") nil)
+     (global-set-key (kbd "<f12>l") 'linum-mode)
+     (global-set-key (kbd "<f12>L") 'global-linum-mode)
+     (global-set-key (kbd "<f12>f") 'auto-fill-mode)
+   #+END_SRC
+
 ** Set languages recognised by org babel
 
 Babel in org mode needs a list of languages supported.
@@ -126,17 +142,19 @@ I have also mapped the ~;~ key to call ex commands to avoid the need
 to use the shift key.
 
 #+begin_src emacs-lisp
-(use-package evil
-  :ensure t
-  :init
-  (use-package key-chord
-     :load-path "key-chord"
-     :config (key-chord-mode 1))
-  :config
-  (evil-mode 0)
-  (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
-  (define-key evil-motion-state-map ";" 'evil-ex)
-  :bind (([f12] . evil-mode)))
+  (use-package evil
+    :ensure t
+    :init
+    (use-package key-chord
+       :load-path "key-chord"
+       :config (key-chord-mode 1))
+    :config
+    (evil-mode 0)
+    (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+    (define-key evil-motion-state-map ";" 'evil-ex)
+    :bind (:map f12-keymap 
+            ([f12] . evil-mode)
+            ("v" . evil-mode)))
 
 #+end_src
 
