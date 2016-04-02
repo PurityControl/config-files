@@ -40,19 +40,25 @@ to be declared and for emacs this is ~emacs-lisp~
   (set-face-attribute 'default nil :height 160)))
 #+end_src
 ** Set custom keybindings
-   *** F12 Key Chord Bindings
+*** F12 Key Chord Bindings
    F12 will act as the first part of a key combination for customised
-   key bindings.
-   First explicitly set F12 to nil so it is not used as a key binding
-   on its own.
-   And reserve F12 F12 as will be used to trigger evil mode later
+   key bindings.  F12 is being used as a prefix key and so needs to be
+   defined with =define-prefix-command= to create a keymap.  Then
+   bindings are set with =define-key= and the keymap as the first part
+   of the binding. Bindings without a keymap would use the
+   =global-set-key= function instead.
+
+   Reserve F12 F12 as will be used to trigger evil mode later.
+
+   See the evil mode section to see the required syntax for
+   use-package binding keys with a keymap.
    #+BEGIN_SRC emacs-lisp
      (define-prefix-command 'f12-keymap)
      (global-set-key (kbd "<f12>") 'f12-keymap)
      (global-set-key (kbd "<f12><f12>") nil)
-     (global-set-key (kbd "<f12>l") 'linum-mode)
-     (global-set-key (kbd "<f12>L") 'global-linum-mode)
-     (global-set-key (kbd "<f12>f") 'auto-fill-mode)
+     (define-key f12-keymap (kbd "l") 'linum-mode)
+     (define-key f12-keymap (kbd "L") 'global-linum-mode)
+     (define-key f12-keymap (kbd "f") 'auto-fill-mode)
    #+END_SRC
 
 ** Set languages recognised by org babel
