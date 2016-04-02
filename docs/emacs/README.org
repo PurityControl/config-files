@@ -256,3 +256,91 @@ To toggle line numbering in the current buffer
 To toggle line numbering across all buffers
 
 ~<M-x> global-linum-mode~
+* Binding Keys and Creating a prefix key
+** Key Bindings
+The main functions used to bind keys to functions are
+
+#+BEGIN_EXAMPLE
+global-set-key
+local-set-key
+global-unset-key
+local-unset-key
+#+END_EXAMPLE
+
+The =global= functions set key binding across all modes, the =local=
+functions set key bindings for the current major mode.
+
+Each function takes a keyboard sequence representing the binding. This
+sequence can be represented in several ways. It can be presented as a
+string in a lisp syntax.
+
+#+BEGIN_EXAMPLE
+"\C-z"
+#+END_EXAMPLE
+
+Or one can use the =kbd= function which takes a string representation
+of the keys and converts them into the emacs form.
+
+#+BEGIN_EXAMPLE
+(kbd "C-z")
+#+END_EXAMPLE
+
+The second argument to the binding is the command you want to bind
+represented as a symbol.
+
+So to bind C-l to turn on linum mode you would execute the following.
+
+#+BEGIN_EXAMPLE
+(global-set-key (kbd "C-l") 'linum-mode)
+#+END_EXAMPLE
+
+** Creating a prefix key
+You can bind a key sequence to a command using the methods discussed
+in the key bindings section above. However if the first part of the
+sequence is a "prefix key" which will be used as a precursor to
+choosing one of many other functions, then it is better practice to
+bind the prefix key to a keymap.
+
+The first part of setting up a prefix key is to make the keymap with
+=define-prefix-command=.
+
+#+BEGIN_EXAMPLE
+(define-prefix-command 'my-custom-map)
+#+END_EXAMPLE
+
+Then you need to bind the key-map to a prefix key. Using the
+=*-set-key= commands described above.
+
+#+BEGIN_EXAMPLE
+(global-set-key (kbd "<f9>") 'my-custom-map)
+#+END_EXAMPLE
+
+Finally you can add keyboard binding to the prefix key. Binding linum
+mode to =<f9>l= is shown in the example below
+
+#+BEGIN_EXAMPLE
+(global-set-key 'my-custom-map (kbd "l") 'linum-mode)
+#+END_EXAMPLE
+
+*** Binding in use-package
+
+If you want to bind a key sequence to a keymap from within use-package
+it takes a special form.
+
+The conventioanl binding are
+
+#+BEGIN_EXAMPLE
+(use-package foo
+  :bind (("C-x x" . my-func)))
+#+END_EXAMPLE
+
+When using a keymap you must add the =:map= keyword and the keymap,
+and list the bindings in a list following.
+
+#+BEGIN_EXAMPLE
+(use-package foo
+  :bind (:map my-custom-map
+          ("x" . my-func)))
+#+END_EXAMPLE
+
+
