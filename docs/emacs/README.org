@@ -308,8 +308,9 @@ The first part of setting up a prefix key is to make the keymap with
 (define-prefix-command 'my-custom-map)
 #+END_EXAMPLE
 
-Then you need to bind the key-map to a prefix key. Using the
-=*-set-key= commands described above.
+Then you need to bind the key-map to a prefix key. To do this you use
+the =define-key= command in place of the =*-set-key= commands
+described above.
 
 #+BEGIN_EXAMPLE
 (global-set-key (kbd "<f9>") 'my-custom-map)
@@ -319,7 +320,7 @@ Finally you can add keyboard binding to the prefix key. Binding linum
 mode to =<f9>l= is shown in the example below
 
 #+BEGIN_EXAMPLE
-(global-set-key 'my-custom-map (kbd "l") 'linum-mode)
+(define-key 'my-custom-map (kbd "l") 'linum-mode)
 #+END_EXAMPLE
 
 *** Binding in use-package
