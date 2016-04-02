@@ -278,7 +278,7 @@ string in a lisp syntax.
 "\C-z"
 #+END_EXAMPLE
 
-Or one can use the =kbd= function which takes an string representation
+Or one can use the =kbd= function which takes a string representation
 of the keys and converts them into the emacs form.
 
 #+BEGIN_EXAMPLE
