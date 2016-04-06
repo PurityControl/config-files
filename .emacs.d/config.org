@@ -77,6 +77,7 @@ For more information on babel in org mode see the
      (lisp . t)
      (ruby . t)
      (python .t)
+     (sh . t)
      ))
 #+END_SRC
 
