@@ -59,6 +59,9 @@ to be declared and for emacs this is ~emacs-lisp~
      (define-key f12-keymap (kbd "l") 'linum-mode)
      (define-key f12-keymap (kbd "L") 'global-linum-mode)
      (define-key f12-keymap (kbd "f") 'auto-fill-mode)
+     (define-key f12-keymap (kbd "=") 'text-scale-increase)
+     (define-key f12-keymap (kbd "-") 'text-scale-decrease)
+     (define-key f12-keymap (kbd "0") 'text-scale-adjust)
    #+END_SRC
 
 ** Set languages recognised by org babel
