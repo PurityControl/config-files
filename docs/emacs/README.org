@@ -193,6 +193,18 @@ characters determine the type of formatting.
 | +strike-through+ | +         |
 |------------------+-----------|
 
+** Narrow and widen the buffer
+Org mode documentation has a great page summarising keybinding for
+[[http://orgmode.org/manual/Structure-editing.html][Structured Editing]].
+Part of that document shows the command available for widening and
+narrowing the buffer to remove clutter when your document gets larger.
+
+| key stroke | Effect                           |
+|------------+----------------------------------|
+| C-x n s    | narrow buffer to current subtree |
+| C-x n b    | narrow buffer to current block   |
+| C-x n w    | widen buffer to remove narrowing |
+|------------+----------------------------------|
 
 ** Org files for config
 
@@ -209,7 +221,6 @@ configuration file so that it is easier to understand and maintain.
 | <s<TAB>     | create a BEGIN_SRC / END_SRC block         |
 | <C-c>'      | move to mode specific buffer to write code |
 |-------------+--------------------------------------------|
-
 
 ** Export to pdf
 
