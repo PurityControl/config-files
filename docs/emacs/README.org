@@ -144,12 +144,15 @@ Negative argument affect previous words.
 Adjusting font size in a buffer is controlled with the function
 ~text-scale-adjust~, ~text-scale-increase~ and ~text-scale-decrease~
 
+The original binding keys documented here were specific to emacs on
+ubuntu and didn't work on mac or windows. Thus there are now custom
+key bindings setup in =config.org=
+
 | Key Bindings | Description                |
 |--------------+----------------------------|
-| C-x +        | Zoom in                    |
-| C-x =        | Zoom in                    |
-| C-x -        | Zoom Out                   |
-| C-x 0        | Restore Original text size |
+| [F12] =      | Zoom in                    |
+| [F12] -      | Zoom Out                   |
+| [F12] 0      | Restore Original text size |
 |--------------+----------------------------|
 
 * Helm
