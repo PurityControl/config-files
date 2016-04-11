@@ -242,6 +242,9 @@ they have to share the same session.
 For session base evaluation to work for R code block you have to have
 ESS mode installed.
 
+In windows you will need to create an ~.Rprofile~ file so that emacs
+knows where you local packages are. This is described in the emacs
+docs of this repo.
 #+BEGIN_SRC emacs-lisp
   (use-package ess
     :ensure t)
