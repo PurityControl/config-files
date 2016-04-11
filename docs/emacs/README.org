@@ -259,6 +259,28 @@ relevant packages using ~ports~
 This installed all the packages I needed to export to pdf from org
 mode and to export to pdf from Rmarkdown in RStudio.
 
+** Configuring R on Windows
+In windows you canot write R packages to the ~R lib~ directory in
+program files due to permission issue. To get round this RSutdio sets
+up a personal directory to install package to underneath your home
+directory.
+
+RStudio automatically loads this on launch but emacs does not.
+To make it available system wide create an .~Rprofile~ file
+in your home directory (~%user%/appdata/roaming/~)
+
+This file just contains ~R~ code and wil be run when R is launched.
+By setting up the local library path in this file then emacs is
+able to access it when you run R code in org mode.
+
+#+BEGIN_EXAMPLE
+ldir <- "C:/Users/craig/Documents/R/win-library/3.2"
+if(!file.exists(ldir)){
+  dir.create(ldir,recursive=TRUE)
+}
+.libPaths(c(ldir,.libPaths()))
+#+END_EXAMPLE
+
 * Showing line number
 
 Line numbers can be toggled using linum-mode
