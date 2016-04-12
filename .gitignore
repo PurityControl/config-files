@@ -6,6 +6,8 @@
 .emacs.d/elpa
 .emacs.d/eshell
 .emacs.d/bookmarks
+.emacs.d/session*
+.emacs.d/tramp
 .emacs.d/url
 .emacs.d/ido.last
 
