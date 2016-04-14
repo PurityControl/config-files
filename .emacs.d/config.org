@@ -54,6 +54,7 @@ to be declared and for emacs this is ~emacs-lisp~
    use-package binding keys with a keymap.
    #+BEGIN_SRC emacs-lisp
      (define-prefix-command 'f12-keymap)
+     (define-prefix-command 'whitespace-keymap)
      (global-set-key (kbd "<f12>") 'f12-keymap)
      (global-set-key (kbd "<f12><f12>") nil)
      (define-key f12-keymap (kbd "l") 'linum-mode)
@@ -62,6 +63,12 @@ to be declared and for emacs this is ~emacs-lisp~
      (define-key f12-keymap (kbd "=") 'text-scale-increase)
      (define-key f12-keymap (kbd "-") 'text-scale-decrease)
      (define-key f12-keymap (kbd "0") 'text-scale-adjust)
+     (define-key f12-keymap (kbd "w") 'whitespace-keymap)
+     (define-key whitespace-keymap (kbd "m") 'whitespace-mode)
+     (define-key whitespace-keymap (kbd "r") 'whitespace-report)
+     (define-key whitespace-keymap (kbd "c") 'whitespace-cleanup)
+     (define-key whitespace-keymap (kbd "R") 'whitespace-report-region)
+     (define-key whitespace-keymap (kbd "C") 'whitespace-cleanup-region)
    #+END_SRC
 
 ** Set languages recognised by org babel
