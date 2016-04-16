@@ -381,3 +381,51 @@ and list the bindings in a list following.
 #+END_EXAMPLE
 
 
+* Tramp Mode
+Tramp mode allows you to connect to files and directories on remote
+pc's.
+The default connection mode is scp but that can be changed to ssh
+#+BEGIN_EXAMPLE
+(setq tramp-default-method "ssh")
+#+END_EXAMPLE
+
+You can then connect to a remote machine with the syntax:
+#+BEGIN_EXAMPLE
+C-x C-f /remotehost:filename  RET (or /method:user@remotehost:filename)
+#+END_EXAMPLE
+
+The remoe host can be an
+- ipaddress
+- hostname
+- the name of a host declared is your ssh config file
+
+The latter means you can set up your ssh preference in your
+=~/.ssh/config= file as usual and tramp takes full advantage of them.
+
+** Multiple hops with piping
+You can hop over mutliple ssh connections to access machines hidden in
+other networks.
+The syntax requires using the pipe =|= to join the connections.
+#+BEGIN_EXAMPLE
+C-x C-f /ssh:bird@bastion|ssh:you@remotehost:/patha
+#+END_EXAMPLE
+
+** Editing with elevated permissions
+*** Local files with elevated permissions
+The syntax for editing local files as =su= or =sudo= is:
+#+BEGIN_EXAMPLE
+C-x C-f /su::/path/to/file
+C-x C-f /sudo::/path/to/file
+#+END_EXAMPLE
+
+*** Remote files with elevated permissions
+The syntax for editing remote files as =su= or =sudo= is:
+#+BEGIN_EXAMPLE
+C-x C-f /ssh:you@remotehost|sudo:them@remotehost:/path/to/file RET
+C-x C-f /ssh:you@remotehost|su:remotehost:/path/to/file RET
+#+END_EXAMPLE
+
+You always need to specify the name of the host when piping
+connections, even if it is the same as the last host.
+
+
