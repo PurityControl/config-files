@@ -17,7 +17,7 @@ to be declared and for emacs this is ~emacs-lisp~
 
 Current best practice for customizable variable is to define them
 through the customisation interface. This will then store the
-variables in [[file:custom.el][custome.el]]. Have a look at this file to see additional
+variables in [[file:custom.el][custom.el]]. Have a look at this file to see additional
 customizations that have been set not described in this file. 
 
 ** Make emacs more friendly
