@@ -20,6 +20,10 @@ through the customisation interface. This will then store the
 variables in [[file:custom.el][custom.el]]. Have a look at this file to see additional
 customizations that have been set not described in this file. 
 
+If customised variables are set here then you must use
+=custom-set-variables= or =customize-set-variable= rather than =setq=
+[[https://github.com/PurityControl/lvsthw/tree/master/ch02-setting-options][see this discussion]] for more details.
+
 ** Make emacs more friendly
 
 #+begin_src emacs-lisp
