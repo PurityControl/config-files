@@ -380,7 +380,6 @@ and list the bindings in a list following.
           ("x" . my-func)))
 #+END_EXAMPLE
 
-
 * Tramp Mode
 Tramp mode allows you to connect to files and directories on remote
 pc's.
@@ -428,4 +427,58 @@ C-x C-f /ssh:you@remotehost|su:remotehost:/path/to/file RET
 You always need to specify the name of the host when piping
 connections, even if it is the same as the last host.
 
+
+* Yasnippet
+Yasnippet allows you to create templates that can help eliminate
+duplicating repetitive boiler plate text.
+
+Yasnippet can insert blanket text that needs no arguments, or it can
+take parameters, called =tabstops=, that allow you to insert
+additional information at certain parts of the template.
+
+** Resources
+
+- [[https://capitaomorte.github.io/yasnippet/snippet-development.html][Article]] on writing snippets showing all the directive supported.
+- Brief [[https://www.youtube.com/watch?v%3D-4O-ZYjQxks][Youtube vide]]o showing the basics.
+
+** Create the template
+You can create the template with =M-x yas-new-snippet=. This will
+create an outline of a yasnippet template for you to fill in.
+There will be commented lines requiring input as detailed below.
+
+| key  | purpose                                             |
+|------+-----------------------------------------------------|
+| name | the name given to the snippet in the yasnippet menu |
+| key  | abbreviation required to trigger the snippet        |
+
+Fill these details in and then any text pasted below the comments will
+be inserted into your document when the snippet is triggered.
+
+** Let emacs help you
+=C-h m= gives help and information about your current mode. It gives a
+wealth of information including keybindings associated with the mode.
+
+In this case it shows that =C-c C-c= will load the snippet buffer and
+close. When it does this it will prompt for where to save the file.
+
+** Saving the file
+Be sure to give the file the same name as the snippet
+abbreviation. This makes it much easier to trace your snippet if you
+need to find it later on.
+
+** Arguments
+If you need to fill in details as part of the template creation you
+can add tabstop fields. =$0= is the exit point it is where yasnippet
+postions you on completion of the template. If you only have one
+dynamic piece of information then it will need to be labelled =$0=.
+
+If you have multiple pieces of information to set then start at =$1=
+and keep on incrementing for each additionaly piece of dynamic
+information to be added. Remember to finish with =$0= as your exit
+point.
+
+*** Placeholder fields
+If you want to describe the purpose of your dynamic field or have a
+default value create a colon delimeted field as part of the tabstop
+field within curly braces =${1:my_value}=.
 
