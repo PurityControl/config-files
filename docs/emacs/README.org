@@ -429,7 +429,7 @@ connections, even if it is the same as the last host.
 
 
 * Yasnippet
-Yasnippet allows you to create templates that can help elimiate
+Yasnippet allows you to create templates that can help eliminate
 duplicating repetitive boiler plate text.
 
 Yasnippet can insert blanket text that needs no arguments, or it can
