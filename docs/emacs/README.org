@@ -20,6 +20,13 @@ information on help available
 - ~<C-h r>~ :: Emacs manual
 - ~<C-h i>~ :: Browse Manuals (the lisp tutorial and reference manual is here)
 - ~<C-h ?>~ :: List all available help options
+- ~<C-h k <key-sequence>>~ :: Display help for a command given by key
+     sequence (~<C-h k C-x C-f>~ will give help for opening files)
+- ~<<keymap-sequence> C-h >~ :: List all keybindings associated with
+     keymap. (~<C-x 8 C-h>~ will give help on inserting accented
+     characters)
+- ~<C-h m>~ :: Display all help on current major mode and minor modes
+               inluding keybindings for that mode.
 
 * Universal Arguments / Numeric Arguments
 The various ways you can pass numeric arguments to Emacs are:
