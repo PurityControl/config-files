@@ -4,6 +4,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(explicit-bash-args (quote ("--noediting" "--login" "-i")))
  '(org-hide-emphasis-markers t)
  '(tramp-default-method "ssh"))
 (custom-set-faces
