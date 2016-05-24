@@ -329,7 +329,7 @@ Alchemist is only supported on emacs 24.4 and later
 #+end_src
 
 ** Yaml Mode
-Yaml mode allows for effecient editing of yaml files, automatic
+Yaml mode allows for efficient editing of yaml files, automatic
 indentation and syntax highlighting.
 
 #+BEGIN_SRC emacs-lisp
