@@ -327,3 +327,12 @@ Alchemist is only supported on emacs 24.4 and later
   :init
   (use-package elixir-mode))
 #+end_src
+
+** Yaml Mode
+Yaml mode allows for efficient editing of yaml files, automatic
+indentation and syntax highlighting.
+
+#+BEGIN_SRC emacs-lisp
+  (use-package yaml-mode
+    :ensure t)
+#+END_SRC
