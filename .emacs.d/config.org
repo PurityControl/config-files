@@ -336,3 +336,11 @@ indentation and syntax highlighting.
   (use-package yaml-mode
     :ensure t)
 #+END_SRC
+
+** Markdown Mode
+Markdown mode allows for efficient editing of markdown files.
+
+#+BEGIN_SRC emacs-lisp
+  (use-package markdown-mode
+    :ensure t)
+#+END_SRC
