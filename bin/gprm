@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# remove files recursively from a git repo conforming to a pattern
+find . -iname "$1" -exec git rm {} \;
+
