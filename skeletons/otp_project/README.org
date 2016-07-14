@@ -1,0 +1,18 @@
+#+TITLE: Project Readme
+
+* TODO
+- [ ] Fix Readme Title
+- [ ] set up application name in "make doc"
+- [ ] fix MY_APP.app application metatdata file
+  - [ ] rename file to same name as project
+  - [ ] reanme application name
+  - [ ] add description
+  - [ ] ensure version correct
+  - [ ] add modules
+  - [ ] list registered processes
+  - [ ] ensure all processes than need to start before this are listed
+    in applications
+  - [ ] explain how to start the application in mod
+
+* Project
+
