@@ -1,6 +1,8 @@
 all: compile
 
-compile:
+compile: ebin/*.beam
+
+ebin/*.beam: src/*.erl
 	erlc -o ebin src/*.erl
 
 shell:
