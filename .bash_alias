@@ -1,4 +1,5 @@
 # a file containing all aliases used
+# source this file in your bash_profile
 
 # ruby aliases
 alias be="bundle exec"
