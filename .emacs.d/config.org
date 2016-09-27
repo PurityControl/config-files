@@ -161,7 +161,7 @@ Magit describes itself as a porcelain for git.
          ("M-x" . helm-M-x)
          ("C-x C-f" . helm-find-files)))
 #+end_src
-   
+
 ** Evil Mode
 Evil mode bring vim emulation to emacs. I have added the keychord
 dependency so that I can emulate my custome vim bindings. This allows
