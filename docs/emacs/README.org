@@ -55,7 +55,7 @@ argument.
 
 * Point after incremental search
 
-When searching backwards ~C=r~ the point always finished at the start
+When searching backwards ~C-r~ the point always finished at the start
 of the word you are searching for.  When searching forwards ~C-s~ the point
 rests after the characters searched for.  In many cases this is part
 of the way through a word, and in many cases the desired behaviour
