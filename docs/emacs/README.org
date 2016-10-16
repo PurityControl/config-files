@@ -55,7 +55,7 @@ argument.
 
 * Point after incremental search
 
-When searching backwards ~C=r~ the point always finished at the start
+When searching backwards ~C-r~ the point always finished at the start
 of the word you are searching for.  When searching forwards ~C-s~ the point
 rests after the characters searched for.  In many cases this is part
 of the way through a word, and in many cases the desired behaviour
@@ -386,6 +386,19 @@ and list the bindings in a list following.
   :bind (:map my-custom-map
           ("x" . my-func)))
 #+END_EXAMPLE
+
+** Binding the Fn key on a laptop - especially Mac
+You can control the behaviour of the function key on a laptop and
+assign the key to take on the function of alt, control, super, meta or
+hyper.
+
+This is done by setting the variable ~ns-function-modifier~. The
+preferred way to do this is through the customise interface which you
+can invoke with ~M-x customize~.
+
+Alternatively you can ~setq~ the varaible:
+
+~(setq ns-function-modifier 'control)~
 
 * Tramp Mode
 Tramp mode allows you to connect to files and directories on remote
