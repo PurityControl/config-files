@@ -5,6 +5,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(explicit-bash-args (quote ("--noediting" "--login" "-i")))
+ '(js-indent-level 2)
  '(ns-function-modifier (quote control))
  '(org-hide-emphasis-markers t)
  '(package-selected-packages
