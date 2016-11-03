@@ -8,5 +8,8 @@ alias ber="bundle exec rake"
 alias bers="bundle exec rails server"
 alias bedbc="bundle exec rails dbconsole"
 
-alias g="git"
-alias gc="git commit --verbose"
+alias gav='git commit -a --verbose'
+alias gcv='git commit --verbose'
+alias gd='git diff'
+alias ge='git add . && git commit -a --verbose'
+alias gs='git status'
