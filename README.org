@@ -11,6 +11,12 @@ easily be embedded explaining the configuration.
 To use the config simply link to the ~.emacs.d~ directory and emacs
 will fully configure itself on launch
 
+* Git Directory
+
+There is a git directory setup to control or document git related
+features such as global ignore files or global hooks. See the
+documentation on the [[file:git/README.org][README]].
+
 * Bin Directory
 You need to ensure the bin directory is in your path
 

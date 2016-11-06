@@ -1,0 +1,40 @@
+#+TITLE: Useful GIT configuration options
+
+* Global Ignores
+
+Tired of setting up editor swap files or Mac DSStore files in all of
+your git projects.
+The solution is to create a global gitignore that operates across all
+of your projects in addition to each projects custom .gitignore
+
+Convention is for your global gitignore file to be in
+~$HOME/.gitignore_global~.
+
+#+BEGIN_SRC shell
+git config --global core.excludesfile ~/.gitignore_global
+#+END_SRC
+
+* Creating global hooks
+
+By default the hooks directory is $GIT_DIR/hooks, but that can be
+changed via the core.hooksPath configuration variable.
+
+#+BEGIN_SRC shell
+git config --global core.hooksPath </path/to/my/centralized/hooks>
+#+END_SRC
+
+Then override it in specific repos where required with the following
+command.
+
+#+BEGIN_SRC shell
+git config core.hooksPath </path/to/my/overridden/hooks>
+#+END_SRC
+
+A good choice for and overridden path would be the default when a
+global path is not set which is ~$GIT_Dir/hooks~ ie the hooks directory
+in the projects .git directory.
+
+This repo has a hooks directory with the purpose being you can set
+your core.HooksPath to point to it and gain the benefits of checking
+for things such as innapropriate whitespace on precommit globally for
+all projects.
