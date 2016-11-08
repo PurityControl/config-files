@@ -344,3 +344,13 @@ Markdown mode allows for efficient editing of markdown files.
   (use-package markdown-mode
     :ensure t)
 #+END_SRC
+** Flycheck
+Flycheck is a syntax checker for Emacs. It has support for many
+languages through various syntax checking and linting tools.
+More documentation can be found on their [[http://www.flycheck.org/en/latest/index.html][website]].
+
+#+BEGIN_SRC emacs-lisp
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+#+END_SRC

@@ -10,7 +10,7 @@
  '(org-hide-emphasis-markers t)
  '(package-selected-packages
    (quote
-    (yasnippet yaml-mode use-package markdown-mode magit helm exec-path-from-shell evil ess emmet-mode)))
+    (flycheck yasnippet yaml-mode use-package markdown-mode magit helm exec-path-from-shell evil ess emmet-mode)))
  '(tramp-default-method "ssh"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
