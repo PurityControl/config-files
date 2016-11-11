@@ -82,6 +82,20 @@ If customised variables are set here then you must use
      (define-key whitespace-keymap (kbd "C") 'whitespace-cleanup-region)
    #+END_SRC
 
+*** Emacs Pinky keybindings (F5 and F6)
+    The <ctrl <?>> combinations for saving etc. are hurting my little
+    finger. This seems most acute on macbook laptops, further
+    complicated by the quote and ampersat transposition. These are
+    experimental keymaps to see if I can minimise finger pain while
+    using the most common day to day emacs keystrokes.
+
+    #+BEGIN_SRC emacs-lisp
+     (define-prefix-command 'f6-keymap)
+     (global-set-key (kbd "<f6>") 'f6-keymap)
+     (define-key f6-keymap (kbd "s") 'save-buffer)
+     (define-key f6-keymap (kbd "c") 'save-buffers-kill-terminal)
+    #+END_SRC
+
 ** Set languages recognised by org babel
 
 Babel in org mode needs a list of languages supported.
