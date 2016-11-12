@@ -74,6 +74,7 @@ If customised variables are set here then you must use
      (define-key f12-keymap (kbd "=") 'text-scale-increase)
      (define-key f12-keymap (kbd "-") 'text-scale-decrease)
      (define-key f12-keymap (kbd "0") 'text-scale-adjust)
+     (define-key f12-keymap (kbd "m") 'magit-status)
      (define-key f12-keymap (kbd "w") 'whitespace-keymap)
      (define-key whitespace-keymap (kbd "m") 'whitespace-mode)
      (define-key whitespace-keymap (kbd "r") 'whitespace-report)
@@ -94,6 +95,9 @@ If customised variables are set here then you must use
      (global-set-key (kbd "<f6>") 'f6-keymap)
      (define-key f6-keymap (kbd "s") 'save-buffer)
      (define-key f6-keymap (kbd "c") 'save-buffers-kill-terminal)
+     (define-key f6-keymap (kbd "g") 'keyboard-quit)
+     (define-key f6-keymap (kbd "-") 'undo)
+     (define-key f6-keymap (kbd "e") 'eval-last-sexp)
     #+END_SRC
 
 ** Set languages recognised by org babel
