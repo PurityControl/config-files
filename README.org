@@ -3,6 +3,18 @@
 To use the dot files in the root directory of the repo sym link them
 to your home directory
 
+** Xresources
+The Xresource file sets up configuration of clients to the X Windows
+system. Client are any program rendered on the X Server. This means
+things such as xterm configuration can be set here.
+
+The Xresource file is read when the user logs in. If you need to
+update changes made to the file while already logged in use ~xrdb~.
+
+#+BEGIN_SRC
+xrdb ~/.Xresources
+#+END_SRC
+
 * Emacs config
 Emacs now uses use-package in an org mode file for its [[file:.emacs.d/config.org][configuration]].
 This makes it easy to understand the configuration because notes can
