@@ -11,6 +11,12 @@ things such as xterm configuration can be set here.
 The Xresource file is read when the user logs in. If you need to
 update changes made to the file while already logged in use ~xrdb~.
 
+*** MAC's and X
+If you want to be able to use programs that require an XServer on the
+mac then you will need to install an XServer. XQuartz is an opensource
+implemenation for the mac that was included in 10.5 through 10.7. The
+web page for the software can be found at [[https://www.xquartz.org/][xquartx.org]].
+
 #+BEGIN_SRC
 xrdb ~/.Xresources
 #+END_SRC
