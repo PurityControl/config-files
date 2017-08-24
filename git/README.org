@@ -38,3 +38,21 @@ This repo has a hooks directory with the purpose being you can set
 your core.HooksPath to point to it and gain the benefits of checking
 for things such as innapropriate whitespace on precommit globally for
 all projects.
+
+** Committing a file that fails hook validation
+
+Sometime you have a file that may have errant whitespace, but you do
+not have control over its format (eg. structure.sql file in a rails
+project).
+
+You may need to commit it as is and override the hook checks.
+
+#+BEGIN_SRC ruby
+git commit --no-verify
+
+# or use the shorter -n switch
+
+git commit -n
+#+END_SRC
+
+Magit also allows for this option to be added ~c -n c~.
