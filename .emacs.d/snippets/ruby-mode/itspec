@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: it block for rspec
+# key: itspec
+# --
+it "$1" do
+  $0
+end
