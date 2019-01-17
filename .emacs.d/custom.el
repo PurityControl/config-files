@@ -11,7 +11,7 @@
  '(package-selected-packages
    (quote
     (alchemist feature-mode geiser flycheck yasnippet yaml-mode use-package markdown-mode magit helm exec-path-from-shell evil ess emmet-mode)))
- '(tramp-default-method "ssh"))
+ '(tramp-default-method "ssh" nil (tramp)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
