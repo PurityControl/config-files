@@ -37,11 +37,15 @@
     ("`va" "\\value" nil 0)
    ))
 
+(define-abbrev-table 'S+-transcript-mode-abbrev-table '())
+
+(define-abbrev-table 'SAS-listing-mode-abbrev-table '())
+
+(define-abbrev-table 'SAS-log-mode-abbrev-table '())
+
+(define-abbrev-table 'SAS-mode-abbrev-table '())
+
 (define-abbrev-table 'bibtex-mode-abbrev-table '())
-
-(define-abbrev-table 'bookmark-bmenu-mode-abbrev-table '())
-
-(define-abbrev-table 'bookmark-edit-annotation-mode-abbrev-table '())
 
 (define-abbrev-table 'calendar-mode-abbrev-table '())
 
@@ -59,17 +63,53 @@
 
 (define-abbrev-table 'emacs-lisp-mode-abbrev-table '())
 
+(define-abbrev-table 'epa-info-mode-abbrev-table '())
+
+(define-abbrev-table 'epa-key-list-mode-abbrev-table '())
+
+(define-abbrev-table 'epa-key-mode-abbrev-table '())
+
 (define-abbrev-table 'eshell-mode-abbrev-table '())
 
+(define-abbrev-table 'ess-bugs-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-help-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-jags-mode-abbrev-table '())
+
 (define-abbrev-table 'ess-julia-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-r-help-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-r-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-r-transcript-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-rdired-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-stata-help-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-stata-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-stata-transcript-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-transcript-mode-abbrev-table '())
+
+(define-abbrev-table 'ess-watch-mode-abbrev-table '())
 
 (define-abbrev-table 'evil-command-window-mode-abbrev-table '())
 
 (define-abbrev-table 'evil-list-view-mode-abbrev-table '())
 
+(define-abbrev-table 'flymake-diagnostics-buffer-mode-abbrev-table '())
+
 (define-abbrev-table 'fundamental-mode-abbrev-table '())
 
 (define-abbrev-table 'global-abbrev-table '())
+
+(define-abbrev-table 'gnus-group-mode-abbrev-table '())
 
 (define-abbrev-table 'helm-grep-mode-abbrev-table '())
 
@@ -82,6 +122,14 @@
 (define-abbrev-table 'image-dired-display-image-mode-abbrev-table '())
 
 (define-abbrev-table 'image-dired-thumbnail-mode-abbrev-table '())
+
+(define-abbrev-table 'inferior-ess-julia-mode-abbrev-table '())
+
+(define-abbrev-table 'inferior-ess-mode-abbrev-table '())
+
+(define-abbrev-table 'inferior-ess-r-mode-abbrev-table '())
+
+(define-abbrev-table 'inferior-ess-stata-mode-abbrev-table '())
 
 (define-abbrev-table 'inferior-julia-mode-abbrev-table '())
 
@@ -111,6 +159,8 @@
 
 (define-abbrev-table 'prog-mode-abbrev-table '())
 
+(define-abbrev-table 'sas-dir-mode-abbrev-table '())
+
 (define-abbrev-table 'shell-mode-abbrev-table '())
 
 (define-abbrev-table 'snippet-mode-abbrev-table '())
@@ -129,9 +179,13 @@
 
 (define-abbrev-table 'url-cookie-mode-abbrev-table '())
 
+(define-abbrev-table 'use-package-statistics-mode-abbrev-table '())
+
 (define-abbrev-table 'vc-git-log-edit-mode-abbrev-table '())
 
 (define-abbrev-table 'vc-git-log-view-mode-abbrev-table '())
 
 (define-abbrev-table 'vc-git-region-history-mode-abbrev-table '())
+
+(define-abbrev-table 'xref--xref-buffer-mode-abbrev-table '())
 
