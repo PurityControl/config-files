@@ -81,6 +81,21 @@ If customised variables are set here then you must use
      (define-key whitespace-keymap (kbd "c") 'whitespace-cleanup)
      (define-key whitespace-keymap (kbd "R") 'whitespace-report-region)
      (define-key whitespace-keymap (kbd "C") 'whitespace-cleanup-region)
+
+     (defun purity-toggle-mac-ctrl ()
+       "toggles ctrl with mac keys for laptop use"
+       (interactive)
+       (if (eq mac-control-modifier 'control)
+         (progn
+           (setq mac-command-modifier 'control)
+           (setq mac-control-modifier 'super)
+           (message "Apple key is now control, ctrl key is super."))
+         (progn
+           (setq mac-command-modifier 'super)
+           (setq mac-control-modifier 'control)
+           (message "Apple key is now super, ctrl key is ctrl."))))
+
+     (define-key f12-keymap (kbd "t") 'purity-toggle-mac-ctrl)
    #+END_SRC
 
 *** Emacs Pinky keybindings (F5 and F6)
