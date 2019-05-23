@@ -1,3 +1,6 @@
+;; set the directory to prevent clobbering spacemacs
+(setq user-emacs-directory "~/.emacs.vanilla.d/")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Set windowed interface before immediately to prevent choppy ui changes ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

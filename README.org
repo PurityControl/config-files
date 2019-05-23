@@ -1,7 +1,21 @@
 #+TITLE: config-files
 * Dot Files
-To use the dot files in the root directory of the repo sym link them
-to your home directory
+  To use the dot files in the root directory of the repo sym link them
+  to your home directory
+
+  The .emacs.vanilla.d directory should not be linked to .emacs.d in the home
+  directory. The .emacs.d has been reserved for if you want to use spacemacs.
+  Because of this .emacs.vanilla.d expects to be linked to the same name in the
+  home directory and the config file is setup to use .emacs.vanilla.d as its
+  config directory. Not using this directory name will cause issues when
+  launching with this configuration.
+
+  In order to use the vanilla configuration set up an alias in your ~/.profile~
+  or similar pointing to the config file and ignoring any others.
+
+  #+BEGIN_SRC sh
+  alias vemacs="/path/to/my/emacs -q -l ~/.emacs.vanilla.d/init.el"
+  #+END_SRC
 
 ** Xresources
 The Xresource file sets up configuration of clients to the X Windows
