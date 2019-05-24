@@ -322,7 +322,7 @@ you should place your code here."
   (setq-default evil-escape-key-sequence "jj")
 
   ;; give me a chance to type out the chord
-  (setq-default evil-escape-delay 0.2)
+  (setq-default evil-escape-delay 0.5)
 
   )
 
