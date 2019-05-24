@@ -317,6 +317,13 @@ you should place your code here."
   (with-eval-after-load 'evil-maps
     (define-key evil-motion-state-map (kbd ":") 'evil-repeat-find-char)
     (define-key evil-motion-state-map (kbd ";") 'evil-ex))
+
+  ;; Set escape keybinding to "jj"
+  (setq-default evil-escape-key-sequence "jj")
+
+  ;; give me a chance to type out the chord
+  (setq-default evil-escape-delay 0.2)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
