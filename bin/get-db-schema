@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# This script outputs all the table schemas for a postgresql database.
+# Limitations:
+# The script does not consider authentication to tho database
+
+# exit as soon as the first statement fails
+set -e
+
+# see if parameters have been given as arguments or need asked for
+if [ $# -eq 0 ]; then
+    read -p "Which database do you want the schema for? " database
+else
+    database=$1;
+fi
+
+tables=$(psql -d $database -c "\dt" \
+             | awk -F '|' '/table/ {print $2}')
+
+for table in $tables
+do
+    psql -d $database -c "\d ${table}"
+done
+
+# return success to play nicely with other scripts
+exit 0;
