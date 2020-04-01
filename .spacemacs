@@ -335,6 +335,10 @@ you should place your code here."
 
   )
 
+;; set indent level for javascript mode
+(setq-default js2-basic-offset 2
+              js-indent-level 2)
+
 (global-linum-mode) ; Show line numbers by default
 
 ;; Do not write anything past this comment. This is where Emacs will
